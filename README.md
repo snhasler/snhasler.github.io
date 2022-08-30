@@ -1,1 +1,1 @@
-## Sammy Hasler -- personal website
+## snhasler.github.io
