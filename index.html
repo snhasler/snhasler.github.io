@@ -123,10 +123,14 @@
 										confusion problem by performing fast orbit fitting and predicting confusion rates for directly imaged systems. This algorithm, 
 										called the "deconfuser", uses astrometric (positional) information for planet detections and generates all possible combinations 
 										of orbit matches for a planetary system. </p> 
-								<p> I am focused on combining photometric information of an exoplanet observation, with the astrometric information that
-										the deconfuser already considers, to decrease the rate of confusion for 
-										
-								
+								<p> I am currently focused on combining photometric information of an exoplanet observation, with the astrometric information that
+										the deconfuser already considers, to decrease the probability of confusion for a system. I have been
+										working on the development of a photometry model to couple with the deconfuser, which can calculate the expected brightness
+										for a planet at any given time of detection. Additionally, I am implementing an additional 
+										ranking metric in the deconfuser to use this photometric information to rank orbit combinations higher if they
+										have more statistically likely orbital phase or brightness results. Preliminary analyses suggest
+										that the additional photometric information will assist in decreasing a system's probability 
+										for confusion. </p>
 										
 								<hr></hr>
 										
