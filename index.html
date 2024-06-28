@@ -60,9 +60,9 @@
 								
 								<p> My primary interests lie in the field of exoplanet science, where I hope to assist in the pursuit to find
 										potentially habitable planets. My current work is focused on analysis tools for future direct 
-										imaging observations. I am particularly interested in how an exoplanet's photometry and 
-										atmospheric composition can assist in "deconfusing" directly imaged multi-planet systems 
-										and inform our interpretation of reflected light observations of exoplanets. 
+										imaging observations and characterizing planets in reflected light. I am particularly interested 
+										in how an exoplanet's photometry and atmospheric composition can assist in "deconfusing" directly 
+										imaged multi-planet systems and inform our interpretation of reflected light observations of exoplanets. 
 										You can find more about my research <a href="https://snhasler.github.io/#research">here. </a> </p>
 								
 								<p> When I'm not thinking about planets, I can be found hiking, playing piano, reading, and spending time with my two cats. 
@@ -99,11 +99,36 @@
 						<!-- Research -->
 							<article id="research">
 								<h2 class="major">Research</h2>
-								<p> During my PhD, I have been working on several different research projects.
-									My main focus is geared toward direct imaging of exoplanets, but I have also worked on finding 
-									Solar system small bodies and an Earth-focused weather-monitoring CubeSat mission. 
-									Below you will find summaries of these projects. </p>
+								<p> During my PhD, I worked on several different research projects.
+									My main interests lie in reflected light direct imaging of exoplanets, but I have 
+									also worked on recovering serendpitous detections of Solar system small bodies 
+									and validating observations from an Earth-observing weather-monitoring CubeSat mission. 
+									Below you will find summaries of  projects. </p>
+
+
+								<hr></hr>
 										
+								<p><b> Observations of Uranus and Neptune at High Phase Angle from the New Horizons Mission</b></p>
+								<p> Ice giant sized exoplanets are among some of the most common planets to exist around other stars. The 
+									2020 Decadal Survey on Astronomy and Astrophysics emphasized the need to further study our Solar
+									System ice giants, Uranus and Neptune, to expand our understanding of the individual planets
+									and in the context of exoplanets. High-phase angle observations are particularly relevant, as future 
+									reflected light direct imaging surveys (e.g., the Roman Coronagraph Instrument or the Habitable Worlds
+									Observatory) will observe planets at large phases. "Ground-truth" observations of our own Solar system planets 
+									will provide us with a baseline from which to interpret our data and test our exoplanet atmospheric models.
+									</p>
+								
+								<p> As part of its second extended missions, the New Horizons spacecraft observed Uranus and Neptune from afar, at 
+									high phase angles which are inaccessible from Earth. In September of 2023, New Horizons observed Uranus 
+									in six color scans and Neptune in 36 color scans. These observations offer an improvement over previous 
+									Voyager observations, which were limited in wavelength range and signal-to-noise ratio. 
+									We are performing a phase curve and color analysis of each of the ice giants, to better understand their
+									atmospheres, energy balance, and scattering properties as analogs for exoplanet studies.  </p> 
+
+								<center><img src="images/Uranus_0557172410_destriped_allFilters_labeled.png" alt="" style="width:95%;"></center>
+								<center figcaption style="font-size:80%"> New Horizons MVIC scans of Uranus from September of 2023 in four 
+									filters. Each panel is centered on the detections of Uranus. </figcaption></center></br>
+
 								<hr></hr>
 										
 								<p><b> Using Exoplanet Photometry to Support Deconfusion of Directly Imaged Multi-Planet
@@ -122,18 +147,16 @@
 										period of 1.2 years, which result in two potential orbit combinations for the system (i.e., confusion). (Pogorelyuk
 										et al. 2022) </figcaption></center></br>
 										
-								<p> Several of my colleagues in <a href="https://starlab.mit.edu/"> STAR Lab </a> have developed an algorithm to address this
+								<p> My colleagues in <a href="https://starlab.mit.edu/"> STAR Lab </a> developed an algorithm to address this
 										confusion problem by performing fast orbit fitting and predicting confusion rates for directly imaged systems. This algorithm, 
 										called the "deconfuser", uses astrometric (positional) information for planet detections and generates all possible combinations 
 										of orbit matches for a planetary system. </p> 
-								<p> I am currently focusing on combining photometric information from an exoplanet observation, with the astrometric information that
-										the deconfuser already considers, to decrease the probability of confusion for a system. I have been
-										working on the development of a photometry model to couple with the deconfuser, which can calculate the expected brightness
-										for a planet at any given time of detection. Additionally, I am implementing an additional 
-										ranking metric in the deconfuser to use this photometric information to rank orbit combinations higher if they
-										have more statistically likely orbital phase or brightness results. Preliminary analyses suggest
-										that the additional photometric information will assist in decreasing a system's probability 
-										for confusion. </p>
+								<p> My research aims to combine photometric information from an exoplanet observation, with the astrometric information that
+										the deconfuser already considers, to decrease the probability of confusion for a system. I developed a photometry model
+										to couple with the deconfuser, which calculates the expected brightness for a planet at any given time of detection. I then 
+										implemented an additional ranking metric in the deconfuser to leverage this photometric information to rank orbit combinations
+										higher if they have more statistically likely orbital phase or brightness results. Preliminary analyses suggest
+										that the additional photometric information assists in decreasing a system's probability of confusion. </p>
 								<center><img src="images/planetary_orbital_phase_ESA.png" alt="" style="width:95%;"></center>
 								<center figcaption style="font-size:80%"> Planetary orbital phases (Credit: ESA) </figcaption></center></br>	
 										
@@ -149,7 +172,7 @@
 										SPECULOOS </a> and <a href="https://www.researchgate.net/publication/224992121_ASTEP_400_A_telescope_designed_for_exoplanet_transit_detection_from_Dome_C_Antarctica"> 
 										ASTEP </a> surveys. </p>
 										
-								<p> My work focused on the development and implementation of a pipeline, referred to as the LUNA (Looking for 
+								<p> I developed and implemented a pipeline, referred to as the LUNA (Looking for 
 										UNknown Asteroids) pipeline. The LUNA pipeline calibrates images, passes them into a publicly-available 
 										synthetic tracker (<a href="https://www.tycho-tracker.com/">Tycho Tracker </a>), and returns follow-up 
 										parameters for each night of observations. On SPECULOOS data, the pipeline can run every day on the previous 
@@ -173,13 +196,14 @@
 										The goal of the mission is to provide observations of the atmosphere at high temporal resolution to monitor the rapidly-evolving
 										features of tropical cyclones. </p>
 										
-								<p> The TROPICS Pathfinder space vehicle was launched in June 30, 2021 as a precursor to the full TROPICS mission and is currently observing 
-										on a sun-synchronous orbit. During my time at MIT, I supported the calibration and validation process of the 
+								<p> The TROPICS Pathfinder space vehicle was launched in June 30, 2021 into a sun-synchronous orbit, as a precursor to the full 
+										TROPICS mission. During my time at MIT, I supported the calibration and validation process of the 
 										on-orbit data collected by Pathfinder. I worked on a team in STAR Lab to develop a validation process using a known quality data source 
 										(<a href="https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5">ERA5 </a>), a radiative transfer model 
 										(<a href="https://www.jcsda.org/jcsda-project-community-radiative-transfer-model">CRTM </a>), and cloud maps 
 										(<a href="https://en.wikipedia.org/wiki/GOES-16">GOES-16 & -17 </a>)
-										to determine the accuracy of Pathfinder's observations. For more about the TROPICS mission, see 
+										to determine the accuracy of Pathfinder's observations. Our method can also be applied to the full satellite
+										constellation. For more about the TROPICS mission, see 
 										<a href="https://tropics.ll.mit.edu/CMS/tropics/">here </a>. </p>
 										
 								<center><img src="images/TROPICS_satellite.jpg" alt="" style="width:75%;"></center>
