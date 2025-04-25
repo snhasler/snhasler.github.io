@@ -126,7 +126,7 @@
 								<hr></hr>
 
 								<p><b> <font color="#c9b9fa">Modeling Ringed Exoplanet Observations with the Roman Coronagraph Instrument</font> </b></p>
-								<p> The Nancy Grace Roman Space Telescope (Roman) is scheduled to launch in October 2026, and will host a Coronagraph 
+								<p> The Nancy Grace Roman Space Telescope (Roman) is scheduled to launch in October 2026 and will host a Coronagraph 
 									Instrument technology demonstration designed to perform high-contrast direct imaging of exoplanets from 
 									space for the first time. In recent years, transit surveys and direct imaging campaigns from the ground
 									have revealed exciting exoplanet phenomena, including a potential ring system in a transit light curve around
@@ -151,12 +151,12 @@
 
 								<hr></hr>
 								
-								<p><b> <font color="#c9b9fa">Observations of Uranus and Neptune at High Phase Angle from the New Horizons Mission</font> </b></p>
+								<p><b> <font color="#c9b9fa">Observations of Uranus at High Phase Angle from the New Horizons Mission</font> </b></p>
 								<p> Ice giant sized exoplanets are among some of the most common planets to exist around other stars. In 
 									order to better understand ice giant sized exoplanets, we can look to our Solar System ice giants
 									to provide "ground truth" observations and a baseline from which to interpret out data and test
 									our atmospheric models. As part of its second extended mission, the New Horizons spacecraft observed Uranus 
-									and Neptune at high phase angles using its MVIC instrument. These observations offer an improvement over 
+									and Neptune at high phase angles using its MVIC instrument. These images offer updated observations and compared to 
 									previous Voyager observations, which were limited in wavelength range and signal-to-noise ratio. 
 									With the New Horizons data, we aim to perform a phase curve and color analysis of each of the ice
 									giants, to better understand their atmospheres, energy balance, and scattering properties as analogs
@@ -166,7 +166,7 @@
 								<center figcaption style="font-size:80%"> New Horizons MVIC scans of Uranus from September of 2023 in four 
 									filters. Each panel is centered on the detections of Uranus. </figcaption></center></br>
 
-								<p> Initial results from the Uranus observations are presented in <a href="https://arxiv.org/abs/2411.04167">Hasler et al. 2024</a>. </p>
+								<p> Results from the Uranus observations are presented in <a href="https://arxiv.org/abs/2411.04167">Hasler et al. 2024</a>. </p>
 
 								<hr></hr>
 										
@@ -175,7 +175,7 @@
 								<p> To enable characterization of close-in planets orbiting Sun-like stars for 
 										future direct imaging missions, we must first know which detection 
 										corresponds to which planet over the course of multiple observations. 
-										Multi-planet systems around Sun-like stars will experience a "confusion" 
+										Multi-planet systems around Sun-like stars may experience a "confusion" 
 										problem for future direct imaging surveys searching for habitable planets, due to the number
 										of planets visible per system, their shorter orbital periods, and their atmospheric characteristics. This 
 										confusion problem makes it difficult to match detections to the correct planet.
@@ -188,16 +188,17 @@
 										
 								<p> My colleagues in <a href="https://starlab.mit.edu/"> STAR Lab </a> developed an algorithm to address this
 										confusion problem by performing fast orbit fitting and predicting confusion rates for directly imaged systems. This algorithm, 
-										called the "deconfuser", uses astrometric (positional) information for planet detections and generates all possible combinations 
+										called the "<a href="https://github.com/MIT-STARLab/deconfuser">deconfuser </a>", uses relative astrometric (positional) 
+										information from planet detections and generates all possible combinations 
 										of orbit matches for a planetary system. </p> 
-								<p> My research aims to combine photometric information from an exoplanet observation, with the astrometric information that
-										the deconfuser already considers, to decrease the probability of confusion for a system. I developed a photometry model
+								<p> <b>My research combines photometric information from an exoplanet observation with the relative astrometry already accepted by the deconfuser
+										 to decrease the probability of confusion for a system.</b> I developed a photometry model
 										to couple with the deconfuser, which calculates the expected brightness for a planet at any given time of detection. I then 
 										implemented an additional ranking metric in the deconfuser to leverage this photometric information to rank orbit combinations
-										higher if they have more statistically likely orbital phase or brightness results. Preliminary analyses suggest
-										that the additional photometric information assists in decreasing a system's probability of confusion. </p>
-								<center><img src="images/planetary_orbital_phase_ESA.png" alt="" style="width:95%;"></center>
-								<center figcaption style="font-size:80%"> Planetary orbital phases (Credit: ESA) </figcaption></center></br>	
+										higher if they have more statistically likely orbital phase or brightness results. The results of my work suggest
+										that <b>photometric information assists in decreasing confusion.</b> </p>
+								<!-- <center><img src="images/planetary_orbital_phase_ESA.png" alt="" style="width:95%;"></center> -->
+								<!-- <center figcaption style="font-size:80%"> Planetary orbital phases (Credit: ESA) </figcaption></center></br> -->
 										
 								<hr></hr>
 										
