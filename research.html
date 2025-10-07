@@ -1,0 +1,440 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Research - Samantha N. Hasler</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+		
+		<!-- Custom styles for alternating layout -->
+		<style>
+			.section-divider {
+				border-top: 2px solid #ccc;
+				margin: 2.0em 0;
+			}
+
+			/* Base responsive image */
+			.responsive-img {
+				width: 100%;
+				max-width: 400px; /* adjust this size to your preference */
+				height: auto;
+				border-radius: 8px;
+			}
+
+			/* Section layout container */
+			.section-flex {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 2em;
+				flex-wrap: wrap; /* ensures responsiveness on smaller screens */
+			}
+
+			.section-flex h2 {
+				margin-top: 0;
+				margin-bottom: 0.75rem;
+			}
+
+			.section-text {
+				flex: 1 1 300px;
+			}
+
+			.section-image {
+				flex: 0 0 auto;
+			}
+
+			/* Alternate layout: image left vs. image right */
+			.section-left .section-image {
+				order: 0;
+			}
+			.section-left .section-text {
+				order: 1;
+			}
+			.section-right .section-image {
+				order: 1;
+			}
+			.section-right .section-text {
+				order: 0;
+			}
+
+			/* Float-style layout for sections where text should wrap around the image */
+			.section-image-float figure {
+				margin: 0;
+				float: left;
+				width: 50%;             /* adjust this to make the image bigger or smaller */
+				max-width: 600px; 
+				margin: 0 2rem 1rem 0;     /* spacing between image and text */
+				}
+
+			.section-image-float img {
+				display: block;
+				width: 100% !important; /* override default image styling */
+				height: auto !important;
+				border-radius: 10px;    /* optional for softer edges */
+				}
+
+			.section-image-float figcaption {
+				font-size: 0.9em;
+				color: #666;
+				text-align: left;
+				margin-top: 0.5rem;
+				line-height: 1.4;
+				font-style: italic;
+				}
+
+			.section-text-float {
+				overflow: visible;       /* let text flow naturally around floated image */
+				}
+
+			.left-section::after {
+				content: "";
+				display: block;
+				clear: both; /* ensures next divider or section starts below the image */
+				}
+
+			/* Make it responsive: stack on narrow screens */
+			@media screen and (max-width: 900px) {
+			.section-image-float {
+				float: none;
+				width: 100%;
+				max-width: none;
+				margin: 0 auto 1rem auto;
+				display: block;
+			}
+			}
+
+			.section-image-float-right figure {
+				margin: 0;
+				float: right;
+				width: 100%;
+				max-width: 600px;
+				margin: 1rem 0.5rem 1rem 0;
+				}
+
+			.section-image-float-right img {
+				display: block;
+				width: 100% !important;
+				height: auto !important;
+				border-radius: 10px;
+				}
+			.section-image-float-right figcaption {
+				font-size: 0.9em;
+				color: #666;
+				text-align: left;
+				margin-top: 0.5rem;
+				line-height: 1.4;
+				font-style: italic;
+			}
+
+			.right-section::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+						/* Float-style layout for sections where text should wrap around the image */
+			.section-image-float-smaller figure {
+				margin: 0;
+				float: left;
+				width: 35%;             /* adjust this to make the image bigger or smaller */
+				max-width: 600px; 
+				margin: 0 2rem 1rem 0;     /* spacing between image and text */
+				}
+
+			.section-image-float-smaller img {
+				display: block;
+				width: 100% !important; /* override default image styling */
+				height: auto !important;
+				border-radius: 10px;    /* optional for softer edges */
+				}
+
+			.section-image-float-smaller figcaption {
+				font-size: 0.9em;
+				color: #666;
+				text-align: left;
+				margin-top: 0.5rem;
+				line-height: 1.4;
+				font-style: italic;
+				}
+
+			.section-text-float-smaller {
+				overflow: visible;       /* let text flow naturally around floated image */
+				}
+
+			.left-section-smaller::after {
+				content: "";
+				display: block;
+				clear: both; /* ensures next divider or section starts below the image */
+				}
+
+		</style>
+
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/initials_website_logoi.JPG" alt="" /></span><span class="title">Samantha N. Hasler</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+							<li><a href="research.html">Research</a></li>
+							<li><a href="publications.html">Publications</a></li>
+							<li><a href="cv.html">CV</a></li>
+							<li><a href="talksoutreach.html">Outreach & Talks</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+						</ul>
+						<br></br>	
+											
+						<div class="menu-social-icons">
+								<a href="mailto:shasler@mit.edu" class="icon solid style2 fa-envelope"><span class="label">Email</span></a>
+								<a href="https://github.com/snhasler" class="icon brands style2 fa-github"><span class="label">GitHub</span></a>
+								<a href="https://bsky.app/profile/sammyhasler.bsky.social" class="icon brands style2 fa-bluesky"><span class="label"></span></a>
+								<a href="https://www.linkedin.com/in/samantha-hasler/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a>
+						</div>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Research</h1>
+							<hr>
+							<span class="image main"><img src="images/Kepler_452b_illustration_cropped.png" alt="" /></span>
+							<p>My research spans exoplanet and Solar System science, with a particular focus on future reflected light direct imaging. Check out some of my research projects below.</p>
+							<div class="section-divider"></div>		
+						</div>
+						
+						<!-- deconfusion -->
+						<div class="inner right-section">
+							<div class="section-image-float-right">
+								<figure>
+								<img src="images/system8_partitions.gif" alt="" class="responsive-img" />
+								<figcaption> Confused orbit options for a simulated multi-planet system.</figcaption>
+								</figure>
+							</div>
+
+							<div class="section-text-float">
+								<h2><font color="#987cd9">Photometry for Exoplanet Detection Deconfusion</font></h2>
+								<p>Future direct imaging missions will have instrumentation capable of directly imaging Earth-like exoplanets 
+								in reflected light. Previous work (e.g., <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...937...66P/abstract" target="_blank">Pogorelyuk et al. 2022</a>) predicted that we may encounter a "confusion"
+								problem when directly imaging multi-planet systems and it is not clear which detection belongs to which planet.   
+								The <a href="https://github.com/MIT-STARLab/deconfuser" target='_blank'>"deconfuser"</font></strong></a>
+								tool was developed to address the planet-detection confusion problem and fit orbits to detections 
+								of planets.
+								<br></br>
+								My work has focused on augmenting the deconfuser with exoplanet phase and color information to account for the 
+								brightness variation that a planet exhibits throughout its orbit. I developed a photometry model to couple with the deconfuser, 
+								which calculates the expected brightness for a planet at any given time of observation. I developed an updated orbit-ranking metric
+								to improve deconfusion for systems if they have a more statistically likely phase or brightness result. My work emphasizes
+								the necessity for including photometric information in orbit fits and suggests that photometry will be useful for decreasing
+								planet-detection confusion.</p>
+								<ul class="actions">
+									<li><a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...937...66P/abstract" target='_blank' class="button"><font color="#7856c7">read paper I</font></a></li>
+									<li><a href=https://github.com/MIT-STARLab/deconfuser/tree/paper" target='_blank' class="button"><font color="#7856c7">deconfuser GitHub repo</font></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="inner">
+							<div class="section-divider"></div>
+						</div>
+
+
+						<!-- ice giants -->
+						 <div class="inner left-section">
+							<div class="section-image-float">
+								<figure>
+								<img src="images/uranus_results_wimgs.png"/>
+								<figcaption>(Top) Figure 6 from Hasler et al. 2024. Expected and observed New Horizons (NH)/MVIC I/F compared with the Karkoschka (1998) (K98) geometric albedo spectrum scaled to a phase of 43.9° and 53.4° with a Lambertian phase function.
+									(Bottom) Destriped MVIC frames centered on Uranus. </figcaption>
+								</figure>
+							</div>
+
+							<div class="section-text-float">
+								<h2><font color="#987cd9">Ice Giants at High Phase Angles</font></h2>
+								<p>	
+								The only measurements of the heat balance of Uranus and Neptune came from Voyager 2 flyby data in 1986 and 1989, respectively.
+								These observations left major questions about why each of the planets is so different despite their similar bulk composition and size. 
+								On top of the limited understsanding we have of the Solar System ice giants, we now know that ice giant sized planets are among the most common planets in the galaxy. 
+								Future observatories will enable direct imaging of planets in reflected light and characterization of their atmospheres.
+								However, the viewing geometries accessible to us will only include partial phase angles.
+								It is therefore critical that we understand the atmospheres and time variability of the Solar System planets at partial phase to fully understand the data collected by these future observatories. 
+								<br></br>
+								The New Horizons Multispectral Visible Imaging Camera (MVIC) imaged the Solar System ice giants at high phase angles in 2023, 2019, and 2010. 
+								These observations provide new and complementary data with a different set of wavelengths, from a better-calibrated instrument, and during a different season compared to the Voyager observations.
+								The results suggest that Uranus at high phase angle is darker than predicted by a Lambertian phase curve. 
+								This analysis has implications for informing exoplanet models and interpretation of future observations with missions like the Habitable Worlds Observatory.
+								</p>
+
+								<ul class="actions">
+									<li><a href="https://ui.adsabs.harvard.edu/abs/2024PSJ.....5..267H/abstract" target='_blank' class="button"><font color="#7856c7">read Uranus paper</font></a></li>
+								</ul>
+							</div>
+
+							<div class="section-divider"></div>
+						 </div>
+						
+						<!-- roman-related work -->
+						<div class="inner right-section">
+							<div class="section-image-float-right">
+								<figure>
+								<img src="images/planet_illumination.png" alt="" class="responsive-img" />
+								<figcaption> Example output from the ringed planet model (scaled up for viewing). Gold points show where the planet and ring are illuminated with respect to the observer (black triangle).
+									Navy points indicate shadowed regions. Gray points are areas that are not seen with respect to the observer.
+								</figcaption>
+								</figure>
+							</div>
+
+							<div class="section-text-float">
+								<h2><font color="#987cd9">Ringed Exoplanets with the Roman Coronagraph</font></h2>
+								<p>
+								In recent years, transit surveys and direct imaging campaigns from ground- and space-based observatories have revealed exciting 
+								exoplanet phenomena, including a potential ring system in a transit light curve around J1407b (Kenworthy & Mamajek 2015; Kenworthy et al. 2014), 
+								a detected circumplanetary disk structure around PDS 70c (Isella et al. 2019; Benisty et al. 2021), and observations of low-density exoplanets 
+								which could be explained by the presence of ring systems (e.g., Piro & Vissapragada 2020). 
+								In the future, direct imaging missions will continue to paint a more comprehensive picture of the exoplanet population as 
+								we reach toward imaging cooler, more mature planets in reflected light.
+								<br></br>
+								This study is motivated by the potential unknowns that may be uncovered by the Roman Coronagraph Instrument, slated to launch by May 2027. 
+								Roman will enable the first detection of a mature exoplanet in reflected light, and it is possible that these planets could have ring systems.
+								How large would a ring need to be to be detectable with Roman? What observing strategies would maximize our chances of detecting and characterizing rings?
+								</p>
+								<ul class="actions">
+									<li><a href="" target='_blank' class="button disabled"><font color="#7856c7">paper coming soon!</font></a></li>	
+								</ul>
+							</div>
+						</div>
+						<div class="inner">
+							<div class="section-divider"></div>
+						</div>
+
+						<!-- asteroids -->
+						 <div class="inner left-section-smaller">
+							<div class="section-image-float-smaller">
+								<figure>
+								<img src="images/2002NE23_detection2.png" class="responsive-img"/>
+								<figcaption>Stacked images showing a detection of the known Main-Belt Asteroid 2002 NE23 using our method. </figcaption>
+								</figure>
+							</div>
+
+							<div class="section-text-float-smaller">
+								<h2><font color="#987cd9">Serendipitous Asteroid Recovery</font></h2>
+								<p>	
+								Many astronomical observations contain serendipitous detections of minor Solar System bodies.
+								Using techniques like <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.521.4568B/abstract" target="_blank">synthetic tracking </a>, 
+								we can recover observations of the faintest objects that cross the field of view, measure their light curves, and improve knowledge of 
+								their orbits.
+								These objects provide a unique opportunity to understand the formation and evolution of the early Solar System.
+								<br></br>
+								We developed a pipeline to identify and recover chance detections of asteroids in time-series photometric data from the 
+								<a href="https://www.speculoos.uliege.be/cms/c_4259452/en/speculoos">SPECULOOS</a> and 
+								<a href="https://ui.adsabs.harvard.edu/abs/2010SPIE.7733E..4TD/abstract">ASTEP</a> surveys using the publicly-available
+								synthetic tracking software, <a href="https://www.tycho-tracker.com/">Tycho Tracker</a>.
+								These methods were also extended to JWST observations and resulted in the 
+								<a href="https://news.mit.edu/2024/mit-astronomers-find-smallest-asteroids-ever-detected-main-belt-1209">first observations of decameter-sized main-belt asteroids</a>.
+								</p>
+							</div>
+							<br></br>
+								<ul class="actions">
+									<li><a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.521.4568B/abstract" target='_blank' class="button"><font color="#7856c7">read SPECULOOS paper</font></a></li>
+									<li><a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.526.3601H/abstract" target='_blank' class="button"><font color="#7856c7">read ASTEP paper</font></a></li>
+									<li><a href="https://ui.adsabs.harvard.edu/abs/2025Natur.638...74B/abstract" target='_blank' class="button"><font color="#7856c7">read JWST paper</font></a></li>
+								</ul>
+							<div class="section-divider"></div>
+						 </div>
+
+
+						<!-- TROPICS -->
+						<div class="inner right-section">
+							<div class="section-image-float-right">
+								<figure>
+								<img src="images/TROPICS_satellite.jpg" alt="" class="responsive-img" />
+								<figcaption> TROPICS Space Vehicle (Credit: MIT LL)
+								</figcaption>
+								</figure>
+							</div>
+
+							<div class="section-text-float">
+								<h2><font color="#987cd9">Other Work: Data Validation for the NASA TROPICS Mission</font></h2>
+								<p>
+								The NASA TROPICS (Time-Resolved Observations of Precipitation structure and storm Intensity with a Constellation of Smallsats)
+								Mission is a mission designed to provide rapid-refresh microwave measurements of the Earth's troposphere with a constellation of 
+								small satellites. The goal of the mission is to provide nearly all-weather observations of the atmosphere at high 
+								temporal resolution to monitor the rapidly-evolving features of tropical cyclones.
+								<br></br>
+								During my time at MIT, I supported the calibration and validation process of the on-orbit data collected by the Pathfinder satellite.
+								I worked on a team in STAR Lab to develop a validation process using ERA5 reanalysis data, 
+								the <a href="https://www.jcsda.org/jcsda-project-community-radiative-transfer-model">CRTM</a> 
+								radiative transfer model, and <a href="https://www.goes-r.gov/">GOES-16 & -17</a>
+								cloud maps to determine the accuracy of Pathfinder's observations. 
+								Our methods could also be applied to the full satellite constellation. 
+								For more about the TROPICS mission, see <a href="https://tropics.ll.mit.edu/overview">here</a>.
+								</p>
+								<ul class="actions">
+									<li><a href="https://ui.adsabs.harvard.edu/abs/2025IJSTA..18.2512G/abstract" target='_blank' class="button"><font color="#7856c7">Read paper</font></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="inner">
+							<div class="section-divider"></div>
+						</div>
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Contact Me</h2>
+								<ul class="icons">
+									<li><a href="mailto:shasler@mit.edu" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://github.com/snhasler" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://bsky.app/profile/sammyhasler.bsky.social" class="icon brands style2 fa-bluesky"><span class="label"></span></a></li>
+  									<li><a href="https://www.linkedin.com/in/samantha-hasler/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Samantha N. Hasler</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

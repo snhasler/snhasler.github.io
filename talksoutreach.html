@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Outreach & Talks - Samantha N. Hasler</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+		
+		<!-- Custom styles for alternating layout -->
+		<style>
+			.section-divider {
+				border-top: 2px solid #ccc;
+				margin: 2.0em 0;
+			}
+
+			/* Base responsive image */
+			.responsive-img {
+				width: 100%;
+				max-width: 400px; /* adjust this size to your preference */
+				height: auto;
+				border-radius: 8px;
+			}
+
+			/* Section layout container */
+			.section-flex {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 2em;
+				flex-wrap: wrap; /* ensures responsiveness on smaller screens */
+			}
+
+			.section-flex h2 {
+				margin-top: 0;
+				margin-bottom: 0.75rem;
+			}
+
+			.section-text {
+				flex: 1 1 300px;
+			}
+
+			.section-image {
+				flex: 0 0 auto;
+			}
+
+			/* Alternate layout: image left vs. image right */
+			.section-left .section-image {
+				order: 0;
+			}
+			.section-left .section-text {
+				order: 1;
+			}
+			.section-right .section-image {
+				order: 1;
+			}
+			.section-right .section-text {
+				order: 0;
+			}
+
+			/* Float-style layout for sections where text should wrap around the image */
+			.section-image-float figure {
+				margin: 0;
+				float: left;
+				width: 35%;             /* adjust this to make the image bigger or smaller */
+				max-width: 600px; 
+				margin: 0 2rem 1rem 0;     /* spacing between image and text */
+				}
+
+			.section-image-float img {
+				display: block;
+				width: 100% !important; /* override default image styling */
+				height: auto !important;
+				border-radius: 10px;    /* optional for softer edges */
+				}
+
+			.section-image-float figcaption {
+				font-size: 0.9em;
+				color: #666;
+				text-align: left;
+				margin-top: 0.5rem;
+				line-height: 1.4;
+				font-style: italic;
+				}
+
+			.section-text-float {
+				overflow: visible;       /* let text flow naturally around floated image */
+				}
+
+			.left-section::after {
+				content: "";
+				display: block;
+				clear: both; /* ensures next divider or section starts below the image */
+				}
+
+			/* Make it responsive: stack on narrow screens */
+			@media screen and (max-width: 900px) {
+			.section-image-float {
+				float: none;
+				width: 100%;
+				max-width: none;
+				margin: 0 auto 1rem auto;
+				display: block;
+			}
+			}
+
+			.section-image-float-right figure {
+				margin: 0;
+				float: right;
+				width: 100%;
+				max-width: 600px;
+				margin: 1rem 0.5rem 1rem 0;
+				}
+
+			.section-image-float-right img {
+				display: block;
+				width: 100% !important;
+				height: auto !important;
+				border-radius: 10px;
+				}
+			.section-image-float-right figcaption {
+				font-size: 0.9em;
+				color: #666;
+				text-align: left;
+				margin-top: 0.5rem;
+				line-height: 1.4;
+				font-style: italic;
+			}
+
+			.right-section::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+						/* Float-style layout for sections where text should wrap around the image */
+			.section-image-float-smaller figure {
+				margin: 0;
+				float: left;
+				width: 30%;             /* adjust this to make the image bigger or smaller */
+				max-width: 600px; 
+				margin: 0 2rem 1rem 0;     /* spacing between image and text */
+				}
+
+			.section-image-float-smaller img {
+				display: block;
+				width: 100% !important; /* override default image styling */
+				height: auto !important;
+				border-radius: 10px;    /* optional for softer edges */
+				}
+
+			.section-image-float-smaller figcaption {
+				font-size: 0.9em;
+				color: #666;
+				text-align: left;
+				margin-top: 0.5rem;
+				line-height: 1.4;
+				font-style: italic;
+				}
+
+			.section-text-float-smaller {
+				overflow: visible;       /* let text flow naturally around floated image */
+				}
+
+			.left-section-smaller::after {
+				content: "";
+				display: block;
+				clear: both; /* ensures next divider or section starts below the image */
+				}
+
+			/* Center and make embedded videos responsive */
+			.video-container {
+				position: relative;
+				width: 100%;
+				max-width: 800px; /* controls max size of video */
+				margin: 2rem auto; /* centers it on the page */
+				aspect-ratio: 16 / 9; /* keeps the correct aspect ratio */
+				overflow: hidden;
+				}
+
+			.video-container iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border: none;
+				}
+
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/initials_website_logoi.JPG" alt="" /></span><span class="title">Samantha N. Hasler</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+							<li><a href="research.html">Research</a></li>
+							<li><a href="publications.html">Publications</a></li>
+							<li><a href="cv.html">CV</a></li>
+							<li><a href="talksoutreach.html">Outreach & Talks</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+						</ul>
+						<br></br>	
+											
+						<div class="menu-social-icons">
+								<a href="mailto:shasler@mit.edu" class="icon solid style2 fa-envelope"><span class="label">Email</span></a>
+								<a href="https://github.com/snhasler" class="icon brands style2 fa-github"><span class="label">GitHub</span></a>
+								<a href="https://bsky.app/profile/sammyhasler.bsky.social" class="icon brands style2 fa-bluesky"><span class="label"></span></a>
+								<a href="https://www.linkedin.com/in/samantha-hasler/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a>
+						</div>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Outreach & Talks</h1>
+							<hr>
+							<h2>Outreach & Service</h2>
+							<p>I am heavily involved in outreach and mentoring in various capacities. Below I list a few highlights. For a full list of outreach and professional service activities, check out my <a href="cv.html">CV</a>.</p>
+
+							<!-- wixii -->
+							<div class="inner right-section">
+								<div class="section-image-float-right">
+									<a href="https://sites.google.com/view/eaps-student-advisory-council/wixii"><img src="images/WiXII_logo.png" alt="" class="responsive-img" /></a>
+								</div>
+
+								<div class="section-text-float">
+									<h3><font color="#7856c7"><a href="https://sites.google.com/view/eaps-student-advisory-council/wixii">Women+ in Course XII (WiXII)</a></font></h3>
+									<p>WiXII is a graduate student and postdoc run affinity group in the Department of Earth, Atmospheric, and Planetary Sciences (Course 12) at MIT.
+									We support members of the department by running workshops, promoting opportunities, and facilitating discussions that address issues of equality and diversity in science and academia. 
+									Our goal is to support a more open, inclusive, and communicative climate for all members of our department. 
+									I have served as the co-chair of WiXII since 2023, and I've been an active member throughout my graduate career.
+								</p>
+								</div>
+							</div>
+
+							<!-- LPS -->
+							<div class="inner left-section-smaller">
+								<div class="section-image-float">
+									<figure>
+									<a href="https://prescientist.org/"><img src="images/LPS-horizontal-logo.png" class="responsive-img"/></a>
+									</figure>
+								</div>
+
+								<div class="section-text-float">
+									<h3><font color="#7856c7"><a href="https://prescientist.org/">Letters to a Pre-Scientist</a></font></h3>
+									<p>	Letters to a Pre-Scientist (LPS) is a program that pairs middle schoolers with professional scientists and engineers around the world via a pen-pal program.
+										The goal of the program is to demystify science and engineering careers, provide role models to students, and inspire students to pursue careers in STEM.
+										I have been a pen-pal with several middle schoolers since 2022, and it brings me so much joy to trade letters with these students. 
+									</p>
+								</div>
+							</div>
+
+
+							<!-- BAPS -->
+							<div class="inner right-section">
+								<div class="section-image-float-right">
+									<img src="images/Boston.jpeg" alt="" class="responsive-img" />
+								</div>
+
+								<div class="section-text-float">
+							<h3><font color="#7856c7"><a href="">Boston Area Planetary Science Meeting</a></font></h3>
+									<p> The <b>B</b>oston <b>A</b>rea <b>P</b>lanetary <b>S</b>cience <b>M</b>eeting (BAPSM) is a conference series that brings together planetary and exoplanet scientists from the greater Boston area. 
+										I have served on the Scientific/Local Organizing Committee since 2024. 
+										I help to plan the scientific program and coordinate logistics for the in-person meeting, which is held on a biannual or triannual basis. 
+								</p>
+								</div>
+							</div>
+
+							<div class="section-divider"></div>		
+
+							<h2>Select Talks</h2>
+							<p>Below are a few recorded talks that I have given. For a full list, check out my <a href="cv.html">CV</a>.</p>
+
+							<p>
+								<b> <font color="#7856c7">Using Orbital Phase and Atmospheric Composition to Discriminate Reflected Light Observations of Exoplanets</font></b><br>
+								<a href="https://seec.gsfc.nasa.gov/News_and_Events/exoplanetSeminars.html">NASA GSFC Exoplanet Seminar</a> -- February 2025, Greenbelt, MD, United States
+							</p>
+
+							<div class="video-container">
+								<iframe width="700" height="420" src="https://www.youtube.com/embed/-EyQnsD1WnI?si=ThQ8wOibGLuwzwsk" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							</div>
+
+							<p>
+								<b> <font color="#7856c7">High Phase Angle Observations of Uranus and the Implications for Exoplanet Direct Imaging</font></b><br>
+								<a href="https://pluto.jhuapl.edu/News-Center/index.php#Spotlight-Presentations">New Horizons Science Spotlight Seminar</a> -- October 2024, Online talk
+							</p>
+							<div style="text-align: center;">
+								<video width="90%" controls style="max-width: 800px;">
+									<source src="https://pluto.jhuapl.edu/uploadedDocs/Spotlight-Presentations/33.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+
+							<p>
+								<b> <font color="#7856c7">Reducing Detection Confusion in Directly Imaged Multi-Planet Systems </font> </b><br>
+								<b>Hasler, S.</b>, Pogorelyuk, L., Fitzgerald, R., Vlahakis, S., Cahoy, K., Morgan, R.<br> 
+								<a href="https://aas.org/meetings/aas242">242nd Meeting of the American Astronomical Society</a>, Yield Modeling Tools Workshop -- June 2023, Albuquerque, New Mexico, United States
+							</p>
+
+							<div class="video-container">
+								<iframe width="700" height="420" src="https://www.youtube.com/embed/vI6bdqL2dQY?si=RsoQIGVWKkZrz6df" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							</div>
+
+						</div>
+
+
+
+					</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Contact Me</h2>
+								<ul class="icons">
+									<li><a href="mailto:shasler@mit.edu" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://github.com/snhasler" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://bsky.app/profile/sammyhasler.bsky.social" class="icon brands style2 fa-bluesky"><span class="label"></span></a></li>
+  									<li><a href="https://www.linkedin.com/in/samantha-hasler/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Samantha N. Hasler</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
