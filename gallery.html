@@ -60,10 +60,9 @@
 					</nav>
 
 				<!-- Main -->
-				 <!-- TODO: create new tiles that adjust to image size -->
 					<div id="main">
 						<div class="inner">
-							<h1>Image Gallery</h1>
+							<!-- <h1>Image Gallery</h1> -->
 							<div class="gallery-grid">
 								<figure>
 									<img src="images/AAS_Jan2025.png"/>
@@ -102,8 +101,20 @@
 									<figcaption>At Madison Falls in Olympic National Park</figcaption>
 								</figure>
 								<figure>
-									<img src="images/oregon.jpeg"/>
-									<figcaption>On a beach in Oregon</figcaption>
+									<img src="images/IMG_0595.JPEG"/>
+									<figcaption>Visiting the high-contrast imaging testbed facility at JPL</figcaption>
+								</figure>
+								<figure>
+									<img src="images/IMG_2650.jpeg"/>
+									<figcaption>Hiking in Griffith Park with my IPAC cohort</figcaption>
+								</figure>
+								<figure>
+									<img src="images/IMG_6365.jpeg"/>
+									<figcaption>Observatory at Mt. Wilson</figcaption>
+								</figure>
+								<figure>
+									<img src="images/IMG_5089.jpeg"/>
+									<figcaption>Burano</figcaption>
 								</figure>
 								<figure>
 									<img src="images/sandias2.jpeg"/>
@@ -115,6 +126,11 @@
 								</figure>
 							</div>
 						</div>
+
+						  <!-- Load More button -->
+						<!-- <div class="load-more-container">
+							<button id="load-more-btn" class="button">Load More</button>
+						</div> -->
 					</div>
 
 				<!-- Footer -->
@@ -134,7 +150,6 @@
 							</ul>
 						</div>
 					</footer>
-
 			</div>
 
 		<!-- Scripts -->
@@ -145,5 +160,20 @@
 			<script src="assets/js/main.js"></script>
 			
 
+			<!-- <script>
+				const loadMoreBtn = document.getElementById('load-more-btn');
+				const gallery = document.getElementById('gallery');
+				const figures = Array.from(gallery.querySelectorAll('figure'));
+				const rowsVisible = 3; // number of visible rows initially
+				const cols = 3;        // number of columns per row
+
+				// Hide all images beyond the first N
+				figures.slice(rowsVisible * cols).forEach(fig => fig.classList.add('hidden'));
+
+				loadMoreBtn.addEventListener('click', () => {
+					figures.forEach(fig => fig.classList.remove('hidden'));
+					loadMoreBtn.style.display = 'none'; // hide button after showing all
+				});
+			</script> -->
 	</body>
 </html>
